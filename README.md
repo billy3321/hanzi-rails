@@ -4,6 +4,8 @@ This is a rails gem which provides Sass/JavaScript typesetting framework Han.css
 
 You can read more about han.css at [here](https://github.com/ethantw/Han/)
 
+han.css is made by Chen Yijun (陳奕鈞，http://yijun.me/).
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -25,7 +27,7 @@ Or install it yourself as:
 The han.css files will be added to the asset pipeline and available for you to use. Add the line to `app/assets/stylesheets/application.css`:
 
 ```css
- *= require hanzi
+*= require hanzi
 ```
 
 If you need to use the javascript render function, Add the line to `app/assets/javascripts/application.js`:
