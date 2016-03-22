@@ -2,7 +2,7 @@
 
 This is a rails gem which provides Sass/JavaScript typesetting framework Han.css.
 
-You can read more about han.css at [here](https://github.com/ethantw/Han/)
+You can read more about han.css at [here](https://github.com/ethantw/Han/) and read manual at [here](https://css.hanzi.co/manual/)
 
 han.css is made by Chen Yijun (陳奕鈞，http://yijun.me/).
 
@@ -30,11 +30,21 @@ The han.css files will be added to the asset pipeline and available for you to u
 *= require hanzi
 ```
 
-If you need to use the javascript render function, Add the line to `app/assets/javascripts/application.js`:
+If you need to use the javascript render function, Add these lines to `app/assets/javascripts/application.js`:
 
 ```js
 //= require hanzi
+
+Han.init();
 ```
+
+And add class `han-init` and correct lang attribute to `html` tag.
+
+```html
+<html lang="zh-Hant" class="han-init">
+```
+
+For more information, please read the [manual](https://css.hanzi.co/manual/js-api#rendering).
 
 ## Contributing
 
