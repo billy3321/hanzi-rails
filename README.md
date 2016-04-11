@@ -38,7 +38,7 @@ If you need to use the javascript render function, Add these lines to `app/asset
 Han.init();
 ```
 
-And add class `han-init` and correct lang attribute to `html` tag.
+Or add class `han-init` and correct lang attribute to `html` tag.
 
 ```html
 <html lang="zh-Hant" class="han-init">
